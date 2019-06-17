@@ -1,34 +1,12 @@
+
 {
-  "_from": "react-native-mkepler@^1.0.1",
-  "_id": "react-native-mkepler@1.0.1",
-  "_inBundle": false,
-  "_integrity": "sha512-GcvbDDC4lyjl8vssi15W9hkgjgUfdEcZwyqiQC9y2vGyZC9PRdsMHNY+e5iv2tDsf20zB0JcyKUh4XAmsspKSQ==",
-  "_location": "/react-native-mkepler",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "react-native-mkepler@^1.0.1",
-    "name": "react-native-mkepler",
-    "escapedName": "react-native-mkepler",
-    "rawSpec": "^1.0.1",
-    "saveSpec": null,
-    "fetchSpec": "^1.0.1"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/react-native-mkepler/-/react-native-mkepler-1.0.1.tgz",
-  "_shasum": "ef8f7130a98cb7a5f7bf39fd0f0b1f01789dbda5",
-  "_spec": "react-native-mkepler@^1.0.1",
-  "_where": "/Users/iori/Documents/Git/RNMMB",
-  "author": {
-    "name": "bashen1",
-    "email": "maochunjie@gmail.com"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "react-native-mkepler",
+  "version": "1.0.1",
   "description": "react-native library for JD Kepler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
     "react-native",
     "kepler",
@@ -37,14 +15,9 @@
     "ios",
     "android"
   ],
+  "author": "bashen1 <maochunjie@gmail.com>",
   "license": "MIT",
-  "main": "index.js",
-  "name": "react-native-mkepler",
   "peerDependencies": {
     "react-native": ">=0.40"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.0.1"
+  }
 }
