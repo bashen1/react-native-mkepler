@@ -34,9 +34,8 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile files('libs/jd_crash_lib_release_210.jar')
-    compile files('libs/jdmasdk.jar')
-    compile files('libs/JDSDK_h.jar')
+    implementation 'com.facebook.react:react-native:+'
+    implementation files('libs/jdmasdk.jar')
+    implementation files('libs/JDSDK_h.jar')
+    implementation files('libs/cps_1.0.0.jar')
 }
-  

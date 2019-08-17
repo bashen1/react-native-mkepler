@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-mkepler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react-native library for JD Kepler",
   "main": "index.js",
   "scripts": {

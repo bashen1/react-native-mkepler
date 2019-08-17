@@ -111,7 +111,7 @@ public class RNReactNativeMkeplerModule extends ReactContextBaseJavaModule {
                 // 未登陆
                 final LoginListener mLoginListener = new LoginListener() {
                     @Override
-                    public void authSuccess(Object token) {
+                    public void authSuccess() {
                         WritableMap map = Arguments.createMap();
                         map.putString("message", "success");
                         map.putString("code", Integer.toString(1));

@@ -51,6 +51,7 @@ RCT_EXPORT_MODULE()
     NSDictionary *userInfo = note.userInfo;
     NSString *url = userInfo[@"url"];
     NSURL *URL = [NSURL URLWithString:url];
+    //NSLog (@"%@", URL);
     [[KeplerApiManager sharedKPService] handleOpenURL:URL];
 }
 

@@ -4,7 +4,7 @@
 //  提供Kepler服务
 //  Created by JD.K on 16/6/20.
 //  Copyright © 2016年 JD.K. All rights reserved.
-//  version 2.2.2
+//  version 2.2.3
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -30,6 +30,7 @@ typedef void (^keplerLoginSuccessCallback)();
 /** Kepler登录授权失败回调 */
 typedef void (^keplerLoginFailureCallback)(NSError *error);
 
+typedef void (^keplerCompletionHandler)(BOOL result,id _Nullable responseObject, NSError * _Nullable error);
 
 
 @interface KeplerApiManager : NSObject
@@ -195,9 +196,26 @@ typedef void (^keplerLoginFailureCallback)(NSError *error);
 - (UIViewController *)openShoppingCartWithCustomParams:(NSString *)customParams hiddenNavigationBar:(BOOL)hidden API_DEPRECATED_WITH_REPLACEMENT("openShoppingCartWithUserInfo:userInfo:hiddenNavigationBar:", ios(7.0,11.0));
 - (UIViewController *)openShoppingCartWithUserInfo:(NSDictionary *)userInfo hiddenNavigationBar:(BOOL)hidden;
 
+
+/**
+ 联盟一键加购
+
+ @param unionID 联盟ID
+ @param appID AppID 查看位置：我的推广-推广管理-APP管理
+ @param skuID 商品SKU
+ @param refer refer (原生页面传域名+文章编号)
+ @param viewController 当前的视图控制器
+ @param completionHandler 返回
+ */
+- (void)keplerFastPurchaseWith:(NSString *)unionID
+                         appID:(NSString *)appID
+                         skuID:(NSString *)skuID
+                         refer:(NSString *)refer
+                    controller:(UIViewController *)viewController
+                    completion:(keplerCompletionHandler)completionHandler;
+
+
 /*****************************   End   *******************************************/
-
-
 
 
  /**深圳的加车接口
@@ -268,6 +286,12 @@ typedef void (^keplerLoginFailureCallback)(NSError *error);
 
 //登录态验证
 - (void)keplerLoginWithSuccess:(void (^)())successBlock failure:(void (^)())failureBlock;
+
+
+//金融内部使用
+- (void)getTokenWithCode:(NSString *)code success:(keplerLoginSuccessCallback)successCallback failure:(keplerLoginFailureCallback)failureCallback;
+
+- (void)jdInnerLoginResult:(JDInnerLogin)result code:(NSString *)code;
 
 @end
 

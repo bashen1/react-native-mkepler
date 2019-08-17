@@ -1,5 +1,5 @@
 
-# react-native-mkepler
+# react-native-mkepler (SDK Ver. 2.2.4)
 
 ## 开始
 
@@ -21,7 +21,7 @@
 #### Android
 
 1. 打开 `android/app/src/main/java/[...]/MainActivity.java`
-  - 在顶部添加 `import com.reactlibrary.RNReactNativeMkeplerPackage;`
+  - 在顶部添加 `import com.manmanbuy.mkepler.RNReactNativeMkeplerPackage;`
   - 在 `getPackages()` 方法后添加 `new RNReactNativeMkeplerPackage()`
 2. 打开 `android/settings.gradle` ，添加:
   	```
@@ -41,6 +41,7 @@
 1. 将下载的开普勒iOS SDK引入到项目中
 2. `URL Schemes` 添加 `sdkback + 开普勒appKey` 
 3. `LSApplicationQueriesSchemes` 添加 `jdlogin`、`openapp.jdmobile`
+4. 需要按照步骤来【加入依赖库、关闭Bitcode、设置application openURL等】http://kepler.jd.com/console/docCenterCatalog/docContent?channelId=46
 
 #### Android
 
@@ -51,7 +52,13 @@
     ]
     ```
 2. 复制开普勒SDK中的 `safe.jpg` 到 `android/app/src/main/res/raw/safe.jpg`
-
+3. 配置混淆
+```
+-keep class com.kepler.**{*;}
+-dontwarn com.kepler.**
+-keep class com.jingdong.jdma.**{*;}
+-dontwarn com.jingdong.jdma.**
+```
 
 ## 使用方法
 ```javascript
@@ -59,4 +66,3 @@ import * as mKepler from 'react-native-mkepler';
 
 // TODO: What to do with the module?
 ```
-  
