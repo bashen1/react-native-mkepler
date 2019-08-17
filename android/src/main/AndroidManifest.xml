@@ -14,10 +14,11 @@
         />
         <activity
                 android:name="com.kepler.jd.sdk.WebViewActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
         />
         <activity
                 android:name="com.kepler.jd.sdk.KeplerMidActivity"
-                android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
                 android:windowSoftInputMode="adjustPan|stateHidden"
         />
         <!-- 开普勒配置 -->
