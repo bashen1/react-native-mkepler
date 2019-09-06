@@ -21,7 +21,7 @@
 #### Android
 
 1. 打开 `android/app/src/main/java/[...]/MainActivity.java`
-  - 在顶部添加 `import com.manmanbuy.mkepler.RNReactNativeMkeplerPackage;`
+  - 在顶部添加 `import com.maochunjie.mkepler.RNReactNativeMkeplerPackage;`
   - 在 `getPackages()` 方法后添加 `new RNReactNativeMkeplerPackage()`
 2. 打开 `android/settings.gradle` ，添加:
   	```
