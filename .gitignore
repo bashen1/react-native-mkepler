@@ -70,3 +70,4 @@ typings/
 .next
 *.iml
 .idea/
+examples/package-lock.json
