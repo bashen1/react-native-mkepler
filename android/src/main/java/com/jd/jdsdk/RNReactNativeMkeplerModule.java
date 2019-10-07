@@ -1,5 +1,5 @@
 
-package com.maochunjie.mkepler;
+package com.jd.jdsdk;
 
 import android.app.Application;
 import android.os.Handler;
