@@ -35,7 +35,6 @@ repositories {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    implementation files('libs/jdmasdk.jar')
     implementation files('libs/JDSDK_h.jar')
     implementation files('libs/cps_1.0.0.jar')
 }
