@@ -243,22 +243,14 @@ public class RNReactNativeMkeplerModule extends ReactContextBaseJavaModule {
         Boolean isOpenByH5 = data.getBoolean("isOpenByH5");
         this.dealParam(data);
         if (isOpenByH5 == true) {
-            try {
-                KeplerApiManager.getWebViewService()
-                        .openItemDetailsWebViewPage(itemID,
-                                mKeplerAttachParameter);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            KeplerApiManager.getWebViewService()
+                    .openItemDetailsWebViewPage(itemID,
+                            mKeplerAttachParameter);
         } else {
             try {
                 mKelperTask = KeplerApiManager.getWebViewService()
                         .openItemDetailsPage(itemID, mKeplerAttachParameter,
                                 reactContext, mOpenAppAction, timeOut);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
             } catch (JSONException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -283,21 +275,13 @@ public class RNReactNativeMkeplerModule extends ReactContextBaseJavaModule {
         Boolean isOpenByH5 = data.getBoolean("isOpenByH5");
         this.dealParam(data);
         if (isOpenByH5 == true) {
-            try {
-                KeplerApiManager.getWebViewService().openJDUrlWebViewPage(url,
-                        mKeplerAttachParameter);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            KeplerApiManager.getWebViewService().openJDUrlWebViewPage(url,
+                    mKeplerAttachParameter);
         } else {
             try {
                 mKelperTask = KeplerApiManager.getWebViewService()
                         .openJDUrlPage(url, mKeplerAttachParameter,
                                 reactContext, mOpenAppAction, timeOut);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
             } catch (JSONException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -320,21 +304,13 @@ public class RNReactNativeMkeplerModule extends ReactContextBaseJavaModule {
         Boolean isOpenByH5 = data.getBoolean("isOpenByH5");
         this.dealParam(data);
         if (isOpenByH5 == true) {
-            try {
-                KeplerApiManager.getWebViewService().openOrderListWebViewPage(
-                        mKeplerAttachParameter);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            KeplerApiManager.getWebViewService().openOrderListWebViewPage(
+                    mKeplerAttachParameter);
         } else {
             try {
                 mKelperTask = KeplerApiManager.getWebViewService()
                         .openOrderListPage(mKeplerAttachParameter,
                                 reactContext, mOpenAppAction, timeOut);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
             } catch (JSONException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -357,21 +333,13 @@ public class RNReactNativeMkeplerModule extends ReactContextBaseJavaModule {
         Boolean isOpenByH5 = data.getBoolean("isOpenByH5");
         this.dealParam(data);
         if (isOpenByH5 == true) {
-            try {
-                KeplerApiManager.getWebViewService().openNavigationWebViewPage(
-                        mKeplerAttachParameter);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            KeplerApiManager.getWebViewService().openNavigationWebViewPage(
+                    mKeplerAttachParameter);
         } else {
             try {
                 mKelperTask = KeplerApiManager.getWebViewService()
                         .openNavigationPage(mKeplerAttachParameter,
                                 reactContext, mOpenAppAction, timeOut);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
             } catch (JSONException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -396,21 +364,13 @@ public class RNReactNativeMkeplerModule extends ReactContextBaseJavaModule {
         Boolean isOpenByH5 = data.getBoolean("isOpenByH5");
         this.dealParam(data);
         if (isOpenByH5 == true) {
-            try {
-                KeplerApiManager.getWebViewService().openSearchWebViewPage(
-                        searchKey, mKeplerAttachParameter);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            KeplerApiManager.getWebViewService().openSearchWebViewPage(
+                    searchKey, mKeplerAttachParameter);
         } else {
             try {
                 mKelperTask = KeplerApiManager.getWebViewService()
                         .openSearchPage(searchKey, mKeplerAttachParameter,
                                 reactContext, mOpenAppAction, timeOut);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
             } catch (JSONException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -433,13 +393,8 @@ public class RNReactNativeMkeplerModule extends ReactContextBaseJavaModule {
         Boolean isOpenByH5 = data.getBoolean("isOpenByH5");
         this.dealParam(data);
         if (isOpenByH5 == true) {
-            try {
-                KeplerApiManager.getWebViewService().openCartWebViewPage(
-                        mKeplerAttachParameter);
-            } catch (KeplerBufferOverflowException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+            KeplerApiManager.getWebViewService().openCartWebViewPage(
+                    mKeplerAttachParameter);
         } else {
             try {
                 mKelperTask = KeplerApiManager.getWebViewService()

@@ -71,3 +71,4 @@ typings/
 *.iml
 .idea/
 examples/package-lock.json
+.DS_Store

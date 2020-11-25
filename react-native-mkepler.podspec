@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = "ios/KeplerSDK/*"
 
-  s.dependency "React"
+  s.dependency "React-Core"
 
 end
